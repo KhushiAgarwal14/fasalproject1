@@ -23,7 +23,7 @@ mongoose.connect('mongodb+srv://agarwalkhushi010101:jPw4W1b9LMbU6Il7@test.pfkjps
     .catch((err) => {
         console.log(err);
     });
-let dbURL = 'mongodb://127.0.0.1:27017/moviesdb';
+let dbURL = 'mongodb+srv://agarwalkhushi010101:jPw4W1b9LMbU6Il7@test.pfkjps6.mongodb.net/?retryWrites=true&w=majority&appName=test';
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
