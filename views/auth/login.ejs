@@ -9,7 +9,7 @@
   <style>
     .navbar-custom {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       background-color: #f8f9fa;
       padding: 1rem;
@@ -21,7 +21,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 29rem;
     }
     .navbar-brand img {
       margin-right: 10px;
@@ -30,7 +29,7 @@
       display: flex;
       height: 80vh; 
       background-color: #f8f9fa;
-      margin: 3rem 7rem 5rem 7rem;;
+      margin: 3rem 7rem 5rem 7rem;
       padding: 0;
     }
     .left-image {
@@ -51,38 +50,30 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-custom">
-    <a class="navbar-brand " href="#">
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#">
       <img src="icon.png" alt="Icon" style="width: 30px; height: 30px;">
       Movie Point
     </a>
-    
   </nav>
   
   <div class="main-container">
-
     <img src="https://images.unsplash.com/photo-1616530940355-351fabd9524b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW92aWVzfGVufDB8fDB8fHww" alt="Movie Image" class="left-image">
-  
-    
     <div class="form-container">
       <form action="/login" method="POST">
         <div class="mb-3">
           <label for="exampleInputusername" class="form-label">UserName</label>
           <input type="text" class="form-control" id="exampleInputusername" name="username">
         </div>
-        
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1" name="password">
         </div>
         <button type="submit" class="btn btn-primary mt-3">Login</button>
       </form>
-      <p>Don't have a account? <a href="/signup">Signup!</a></p>
-
+      <p>Don't have an account? <a href="/signup">Signup!</a></p>
     </div>
-   
   </div>
-  
   
   <!-- Bootstrap JS and dependencies (optional, for interactive elements) -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -90,3 +81,4 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
+
